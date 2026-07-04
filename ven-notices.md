@@ -45,7 +45,7 @@ Our goal is to build a strong, friendly, and active alliance where everyone enjo
 
 # 🛡️ Current NAP Alliances
 
-| Alliance | Tag |
+| Alliance | Academy |
 |----------|-----|
 | WIN | `WIN` |
 | DNY | `DnY` |
