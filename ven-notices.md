@@ -1,4 +1,5 @@
 <style> .btn { display: none !important; } </style>
+
 # Alliance Rules & Guidelines
 
 1. Be respectful to all alliance members.
