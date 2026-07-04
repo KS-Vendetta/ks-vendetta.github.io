@@ -9,3 +9,5 @@
 ## 🐻 BEAR TRAP GUIDE 🐻
 * [Click here to read the current Bear Trap Guide](bear-trap.md)
 
+## ⚔️ Alliance Battles
+* [Click here to read the current Alliance Battles](alliance-battles.md)
