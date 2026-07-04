@@ -1,27 +1,65 @@
 <style> .btn { display: none !important; } </style>
 
-# Alliance Rules & Guidelines
+# ⚔️ Alliance Rules & Guidelines
 
-1. Be respectful to all alliance members.
-2. Follow alliance leadership instructions during events and wars.
-3. No unnecessary drama, harassment, or toxic behavior.
-4. Stay active, interactive and contribute when possible.
-5. Notify leadership if you'll be inactive for an extended period.
-6. Support fellow members when under attack.
-7. No scouting or attacking members of NAP alliances or their academy alliance.
-8. Have Fun!
-9. Do not attack alliance members in Arena😊
-10. Non-Nap attacks should be limited to 2 hits per cities and no rallies
-11. Do not attack alliance banner/building, it's unsportsmanlike
+Welcome to **VEN**! 💙  
+Our goal is to build a strong, friendly, and active alliance where everyone enjoys the game and grows together.
 
-    # Nap LIST 
-1. WIN (win)
-2. DNY (DnY)
-3. VEN(KFC)
-4. tOG (aOG)
-5. PWR (pwr)
-6. OTO (oto)
-7. DBR (dBr)
-8. ASE
-9. GOT (BFM)
-10. DEO
+---
+
+## 🤝 Respect & Teamwork
+
+- Treat all alliance members with respect.
+- No drama, harassment, or toxic behavior.
+- Follow leadership instructions during alliance events and wars.
+- Help fellow members whenever possible.
+- Most importantly... **Have Fun!** 🎮
+
+---
+
+## 📅 Activity
+
+- Stay active and participate in alliance events.
+- If you'll be inactive for an extended period, please inform the Leadership Team.
+- Contribute to the alliance whenever possible.
+
+---
+
+## ⚔️ Combat Rules
+
+### ✅ Alliance Members
+- **Do NOT attack alliance members in the Arena.** 😊
+
+### ✅ NAP Rules
+- Do **NOT** scout or attack members of NAP alliances or their academy alliances.
+
+### ✅ Non-NAP Rules
+- Maximum **2 city hits** per player.
+- **No rallies** on cities.
+
+### ❌ Forbidden
+- Do **NOT** attack alliance banners or buildings.
+- Unsportsmanlike behavior will not be tolerated.
+
+---
+
+# 🛡️ Current NAP Alliances
+
+| Alliance | Tag |
+|----------|-----|
+| WIN | `WIN` |
+| DNY | `DnY` |
+| VEN | `KFC` |
+| tOG | `aOG` |
+| PWR | `pwr` |
+| OTO | `oto` |
+| DBR | `dBr` |
+| ASE | `ASE` |
+| GOT | `BFM` |
+| DEO | `DEO` |
+
+---
+
+## 💙 Remember
+
+> **A strong alliance isn't built by power alone—it's built by teamwork, respect, and helping each other grow.**
