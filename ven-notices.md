@@ -54,9 +54,9 @@ Our goal is to build a strong, friendly, and active alliance where everyone enjo
 | PWR | `pwr` |
 | OTO | `oto` |
 | DBR | `dBr` |
-| ASE | `ASE` |
+| GMS |       |
 | GOT | `BFM` |
-| DEO | `DEO` |
+| DEO |       |
 
 ---
 
