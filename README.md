@@ -15,7 +15,7 @@
 ## 🛡️ Viking Attack
 * [Click here to read the current Viking Attack](viking-attack.md)
 
-## ⚔️ Swrdland Showdown
+## ⚔️ Swordland Showdown
 * [Click here to read the current Swordland Showdown](swordland-showdown.md)
 
 ## 📦 Alliance Mobilization
