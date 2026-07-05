@@ -20,3 +20,6 @@
 
 ## 📦 Alliance Mobilization
 * [Click here to read the current Alliance Mobilization](alliance-mobilization.md)
+
+## 🏆 Alliance Championship
+* [Click here to read the current Alliance Championship](alliance-championship.md)
