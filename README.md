@@ -12,5 +12,9 @@
 ## ⚔️ Alliance Battles
 * [Click here to read the current Alliance Battles](alliance-battles.md)
 
-## ⚔️ Viking Attack
+## 🛡️ Viking Attack
 * [Click here to read the current Viking Attack](viking-attack.md)
+
+## ⚔️ Swrdland Showdown
+* [Click here to read the current Swordland Showdown](swordland-showdown.md)
+
