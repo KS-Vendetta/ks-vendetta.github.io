@@ -8,6 +8,22 @@ Swordland Showdown is a large-scale PvP battlefield where alliances compete to c
 
 ---
 
+# 📋 Pre-Event Checklist
+
+Before Swordland Showdown begins, please complete your deployment:
+
+✅ Select **ONE Legion** (**Legion 1** or **Legion 2**) and tap **Vote** under **Deployment**.
+
+🚫 For the **other Legion**, select **Abstention** under **Deployment**.
+
+⚠️ **Only register if you're confident you'll be available for the event.** Matchmaking is based on the number of registered players, so registering but not participating can put the entire team at a disadvantage.
+
+🎯 This helps leadership balance both teams and organize the event efficiently.
+
+💪 Thank you, and good luck on the battlefield!
+
+---
+
 # ⭐ Quick Tips
 
 🎯 Reach **180,000 Personal Points**
