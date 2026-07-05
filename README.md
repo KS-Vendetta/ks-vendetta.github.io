@@ -1,5 +1,11 @@
 <style> .btn { display: none !important; } </style>
 
+Train • Rally • Conquer • Grow Together ⚔️
+
+Everything you need to master Kingshot—Bear Trap, Events, Hero Builds, Battle Guides, Alliance Tips, and much more. Built by VEN, for VEN. 💙
+
+<p style="color: #ffcc00; font-weight: bold; text-align: center;">🚧 Work in Progress: New guides, strategies, and updates will be added regularly.</p>
+
 ## ⚖️ Alliance Rules
 *  [Click here to read the current VEN Notices and Rules](ven-notices.md)
 
