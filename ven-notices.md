@@ -49,7 +49,7 @@ Our goal is to build a strong, friendly, and active alliance where everyone enjo
 |----------|-----|
 | WIN | `WIN` |
 | DNY | `DnY` |
-| VEN | `KFC` |
+| VEN | `ven` |
 | tOG | `aOG` |
 | PWR | `pwr` |
 | OTO | `oto` |
