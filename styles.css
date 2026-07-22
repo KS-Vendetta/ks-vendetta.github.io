@@ -1,341 +1,209 @@
-/* ==========================
-   VEN Alliance Hub v2
-   ========================== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-html{
-    scroll-behavior:smooth;
-}
+<head>
 
-body{
-    font-family: 'Inter', sans-serif;
-    background:#0f172a;
-    color:#ffffff;
-    line-height:1.6;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* ==========================
-   Header
-   ========================== */
+    <title>VEN Alliance Hub</title>
 
-header{
-    background:#111827;
-    border-bottom:2px solid #d4af37;
-    position:sticky;
-    top:0;
-    z-index:1000;
-}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-nav{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 25px;
-}
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
 
-/* Logo */
+    <link rel="stylesheet" href="styles.css">
 
-.logo{
-    font-family:'Orbitron',sans-serif;
-    font-size:28px;
-    color:#d4af37;
-    font-weight:bold;
-}
+</head>
 
-/* ==========================
-   Navigation
-   ========================== */
+<body>
 
-.nav-links{
-    display:flex;
-    align-items:center;
-    gap:12px;
-}
+<header>
 
-.nav-links a,
-.dropdown > a{
+<nav>
 
-    color:white;
-    text-decoration:none;
-    padding:10px 16px;
-    border-radius:8px;
-    transition:.3s;
-    font-weight:600;
-}
+<div class="logo">
+VEN Alliance Hub
+</div>
 
-.nav-links a:hover,
-.dropdown:hover > a{
+<div class="nav-links">
 
-    background:#d4af37;
-    color:#111827;
+<a href="index.html">🏠 Home</a>
 
-}
+<div class="dropdown">
 
-/* ==========================
-   Dropdown
-   ========================== */
+<a href="#">Alliance ▾</a>
 
-.dropdown{
+<div class="dropdown-content">
 
-    position:relative;
+<div class="dropdown-menu">
 
-}
+<a href="ven-notices.html">📢 Notices</a>
 
-.dropdown-content{
+<a href="rank-structure.html">🏅 Rank Structure</a>
 
-    position:absolute;
-    top:100%;
-    left:0;
+</div>
 
-    min-width:240px;
+</div>
 
-    display:none;
+</div>
 
-    padding-top:8px;
+<div class="dropdown">
 
-}
+<a href="#">Events ▾</a>
 
-.dropdown-menu{
+<div class="dropdown-content">
 
-    background:#182234;
+<div class="dropdown-menu">
 
-    border:1px solid #d4af37;
+<a href="bear-trap.html">🐻 Bear Trap</a>
 
-    border-radius:12px;
+<a href="viking-attack.html">⚔ Viking Attack</a>
 
-    overflow:hidden;
+<a href="swordland-showdown.html">🗡 Swordland</a>
 
-    box-shadow:0 15px 35px rgba(0,0,0,.45);
+<a href="alliance-mobilization.html">📋 Mobilization</a>
 
-}
+<a href="alliance-championship.html">🏆 Championship</a>
 
-.dropdown-content a{
+</div>
 
-    display:block;
+</div>
 
-    color:white;
+</div>
 
-    padding:14px 18px;
+<div class="dropdown">
 
-    text-decoration:none;
+<a href="#">Heroes ▾</a>
 
-    transition:.3s;
+<div class="dropdown-content">
 
-}
+<div class="dropdown-menu">
 
-.dropdown-content a:hover{
+<a href="gen-1-heroes.html">🦸 Gen 1 Heroes</a>
 
-    background:#d4af37;
+</div>
 
-    color:#111827;
+</div>
 
-}
+</div>
 
-.dropdown:hover .dropdown-content{
+<a href="#">🛠 Tools</a>
 
-    display:block;
+<a href="#">📺 Videos</a>
 
-}
+<a href="#">🌐 Community</a>
 
-/* ==========================
-   Hero
-   ========================== */
+</div>
 
-.hero{
+</nav>
 
-    text-align:center;
+</header>
 
-    padding:100px 20px;
+<section class="hero">
 
-}
+<h1>Welcome Commander</h1>
 
-.hero h1{
+<p>
 
-    font-size:52px;
+Your one-stop destination for alliance guides, event strategies, hero builds,
+and everything needed to help VEN dominate the kingdom.
 
-    margin-bottom:20px;
+</p>
 
-    font-family:'Orbitron',sans-serif;
+<button onclick="document.getElementById('categories').scrollIntoView({behavior:'smooth'})">
 
-}
+Explore Guides
 
-.hero p{
+</button>
 
-    max-width:700px;
+</section>
 
-    margin:auto;
+<section class="categories" id="categories">
 
-    color:#cbd5e1;
+<div class="card">
 
-    font-size:18px;
+<h3>📜 Alliance</h3>
 
-}
+<p>
 
-.hero button{
+Alliance notices, rules, rank structure and important announcements.
 
-    margin-top:35px;
+</p>
 
-    padding:14px 32px;
+</div>
 
-    border:none;
+<div class="card">
 
-    border-radius:10px;
+<h3>⚔ Events</h3>
 
-    background:#d4af37;
+<p>
 
-    color:#111827;
+Strategies for Bear Trap, Vikings, Swordland and more.
 
-    font-size:18px;
+</p>
 
-    font-weight:bold;
+</div>
 
-    cursor:pointer;
+<div class="card">
 
-    transition:.3s;
+<h3>🦸 Heroes</h3>
 
-}
+<p>
 
-.hero button:hover{
+Hero guides, formations, gear allocation and future generations.
 
-    transform:translateY(-3px);
+</p>
 
-    box-shadow:0 12px 25px rgba(212,175,55,.35);
+</div>
 
-}
+<div class="card">
 
-/* ==========================
-   Categories
-   ========================== */
+<h3>🛠 Tools</h3>
 
-.categories{
+<p>
 
-    max-width:1200px;
+Gift codes, calculators and useful alliance resources.
 
-    margin:auto;
+</p>
 
-    padding:20px;
+</div>
 
-    display:grid;
+<div class="card">
 
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+<h3>📺 Videos</h3>
 
-    gap:25px;
+<p>
 
-}
+Helpful YouTube videos and learning resources.
 
-.card{
+</p>
 
-    background:#182234;
+</div>
 
-    border:1px solid rgba(212,175,55,.25);
+<div class="card">
 
-    border-radius:16px;
+<h3>🌐 Community</h3>
 
-    padding:35px;
+<p>
 
-    transition:.35s;
+Discord, recruitment and useful community links.
 
-    cursor:pointer;
+</p>
 
-}
+</div>
 
-.card:hover{
+</section>
 
-    transform:translateY(-8px);
+<footer>
 
-    border-color:#d4af37;
+VEN Alliance Hub © 2026
 
-    box-shadow:0 15px 30px rgba(0,0,0,.35);
+</footer>
 
-}
+<script src="script.js"></script>
 
-.card h3{
+</body>
 
-    margin-bottom:15px;
-
-    color:#d4af37;
-
-}
-
-.card p{
-
-    color:#cbd5e1;
-
-}
-
-/* ==========================
-   Footer
-   ========================== */
-
-footer{
-
-    margin-top:80px;
-
-    background:#111827;
-
-    text-align:center;
-
-    padding:30px;
-
-    color:#94a3b8;
-
-    border-top:2px solid #d4af37;
-
-}
-
-/* ==========================
-   Mobile
-   ========================== */
-
-@media(max-width:768px){
-
-nav{
-
-    flex-direction:column;
-
-    gap:20px;
-
-}
-
-.nav-links{
-
-    flex-wrap:wrap;
-
-    justify-content:center;
-
-}
-
-.hero{
-
-    padding:70px 20px;
-
-}
-
-.hero h1{
-
-    font-size:36px;
-
-}
-
-.hero p{
-
-    font-size:16px;
-
-}
-
-.dropdown-content{
-
-    position:static;
-
-    width:100%;
-
-}
-
-}
+</html>
