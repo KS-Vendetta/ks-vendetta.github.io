@@ -1,6 +1,8 @@
-/* ==========================
-   VEN Alliance Hub v2
-   ========================== */
+/* ==================================================
+   VEN Alliance Hub - Version 2
+   ================================================== */
+
+/* ---------- Reset ---------- */
 
 * {
     margin: 0;
@@ -8,334 +10,348 @@
     box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family: 'Inter', sans-serif;
-    background:#0f172a;
-    color:#ffffff;
-    line-height:1.6;
+body {
+    font-family: "Inter", sans-serif;
+    background: #0f172a;
+    color: #ffffff;
+    line-height: 1.6;
 }
 
-/* ==========================
-   Header
-   ========================== */
+/* ---------- Header ---------- */
 
-header{
-    background:#111827;
-    border-bottom:2px solid #d4af37;
-    position:sticky;
-    top:0;
-    z-index:1000;
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #111827;
+    border-bottom: 2px solid #d4af37;
 }
 
-nav{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 25px;
+/* ---------- Navigation ---------- */
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Logo */
-
-.logo{
-    font-family:'Orbitron',sans-serif;
-    font-size:28px;
-    color:#d4af37;
-    font-weight:bold;
+.logo {
+    font-family: "Orbitron", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #d4af37;
 }
 
-/* ==========================
-   Navigation
-   ========================== */
-
-<div class="nav-links">{
-    display:flex;
-    align-items:center;
-    gap:12px;
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-<div class="nav-links"> a,
-.dropdown > a{
+/* ---------- Nav Links ---------- */
 
-    color:white;
-    text-decoration:none;
-    padding:10px 16px;
-    border-radius:8px;
-    transition:.3s;
-    font-weight:600;
-}
+.nav-links a,
+.dropdown > a {
 
-<div class="nav-links"> a:hover,
-.dropdown:hover > a{
+    display: block;
 
-    background:#d4af37;
-    color:#111827;
+    color: white;
+    text-decoration: none;
+
+    padding: 10px 16px;
+
+    border-radius: 8px;
+
+    transition: .25s ease;
+
+    font-weight: 600;
 
 }
 
-/* ==========================
-   Dropdown
-   ========================== */
+.nav-links a:hover,
+.dropdown:hover > a {
 
-.dropdown{
-
-    position:relative;
+    background: #d4af37;
+    color: #111827;
 
 }
 
-.dropdown-content{
+/* ---------- Dropdown ---------- */
 
-    position:absolute;
-    top:100%;
-    left:0;
+.dropdown {
 
-    min-width:240px;
-
-    display:none;
-
-    padding-top:8px;
+    position: relative;
 
 }
 
-.dropdown-menu{
+/* keeps the hover alive */
 
-    background:#182234;
+.dropdown-content {
 
-    border:1px solid #d4af37;
+    position: absolute;
 
-    border-radius:12px;
+    top: 100%;
 
-    overflow:hidden;
+    left: 0;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.45);
+    padding-top: 8px;
 
-}
+    display: none;
 
-.dropdown-content a{
-
-    display:block;
-
-    color:white;
-
-    padding:14px 18px;
-
-    text-decoration:none;
-
-    transition:.3s;
+    min-width: 240px;
 
 }
 
-.dropdown-content a:hover{
+/* actual dropdown box */
 
-    background:#d4af37;
+.dropdown-menu {
 
-    color:#111827;
+    background: #182234;
 
-}
+    border: 1px solid #d4af37;
 
-.dropdown:hover .dropdown-content{
+    border-radius: 12px;
 
-    display:block;
+    overflow: hidden;
 
-}
-
-/* ==========================
-   Hero
-   ========================== */
-
-.hero{
-
-    text-align:center;
-
-    padding:100px 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.45);
 
 }
 
-.hero h1{
+.dropdown-content a {
 
-    font-size:52px;
+    display: block;
 
-    margin-bottom:20px;
+    padding: 14px 18px;
 
-    font-family:'Orbitron',sans-serif;
+    color: white;
 
-}
+    text-decoration: none;
 
-.hero p{
-
-    max-width:700px;
-
-    margin:auto;
-
-    color:#cbd5e1;
-
-    font-size:18px;
+    transition: .25s ease;
 
 }
 
-.hero button{
+.dropdown-content a:hover {
 
-    margin-top:35px;
+    background: #d4af37;
 
-    padding:14px 32px;
-
-    border:none;
-
-    border-radius:10px;
-
-    background:#d4af37;
-
-    color:#111827;
-
-    font-size:18px;
-
-    font-weight:bold;
-
-    cursor:pointer;
-
-    transition:.3s;
+    color: #111827;
 
 }
 
-.hero button:hover{
+.dropdown:hover .dropdown-content {
 
-    transform:translateY(-3px);
-
-    box-shadow:0 12px 25px rgba(212,175,55,.35);
+    display: block;
 
 }
 
-/* ==========================
-   Categories
-   ========================== */
+/* ---------- Hero ---------- */
 
-.categories{
+.hero {
 
-    max-width:1200px;
+    text-align: center;
 
-    margin:auto;
-
-    padding:20px;
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
-    gap:25px;
+    padding: 100px 20px;
 
 }
 
-.card{
+.hero h1 {
 
-    background:#182234;
+    font-family: "Orbitron", sans-serif;
 
-    border:1px solid rgba(212,175,55,.25);
+    font-size: 52px;
 
-    border-radius:16px;
-
-    padding:35px;
-
-    transition:.35s;
-
-    cursor:pointer;
+    margin-bottom: 20px;
 
 }
 
-.card:hover{
+.hero p {
 
-    transform:translateY(-8px);
+    max-width: 700px;
 
-    border-color:#d4af37;
+    margin: auto;
 
-    box-shadow:0 15px 30px rgba(0,0,0,.35);
+    color: #cbd5e1;
 
-}
-
-.card h3{
-
-    margin-bottom:15px;
-
-    color:#d4af37;
+    font-size: 18px;
 
 }
 
-.card p{
+.hero button {
 
-    color:#cbd5e1;
+    margin-top: 35px;
 
-}
+    padding: 15px 35px;
 
-/* ==========================
-   Footer
-   ========================== */
+    border: none;
 
-footer{
+    border-radius: 10px;
 
-    margin-top:80px;
+    background: #d4af37;
 
-    background:#111827;
+    color: #111827;
 
-    text-align:center;
+    font-weight: bold;
 
-    padding:30px;
+    font-size: 17px;
 
-    color:#94a3b8;
+    cursor: pointer;
 
-    border-top:2px solid #d4af37;
+    transition: .25s ease;
 
 }
 
-/* ==========================
-   Mobile
-   ========================== */
+.hero button:hover {
 
-@media(max-width:768px){
+    transform: translateY(-3px);
 
-nav{
-
-    flex-direction:column;
-
-    gap:20px;
+    box-shadow: 0 10px 25px rgba(212,175,55,.35);
 
 }
 
-<div class="nav-links">{
+/* ---------- Cards ---------- */
 
-    flex-wrap:wrap;
+.categories {
 
-    justify-content:center;
+    max-width: 1200px;
 
-}
+    margin: auto;
 
-.hero{
+    padding: 20px;
 
-    padding:70px 20px;
+    display: grid;
 
-}
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 
-.hero h1{
-
-    font-size:36px;
+    gap: 25px;
 
 }
 
-.hero p{
+.card {
 
-    font-size:16px;
+    background: #182234;
+
+    border: 1px solid rgba(212,175,55,.25);
+
+    border-radius: 16px;
+
+    padding: 35px;
+
+    transition: .3s ease;
+
+    cursor: pointer;
 
 }
 
-.dropdown-content{
+.card:hover {
 
-    position:static;
+    transform: translateY(-8px);
 
-    width:100%;
+    border-color: #d4af37;
+
+    box-shadow: 0 15px 30px rgba(0,0,0,.35);
 
 }
+
+.card h3 {
+
+    color: #d4af37;
+
+    margin-bottom: 15px;
+
+}
+
+.card p {
+
+    color: #cbd5e1;
+
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+
+    margin-top: 70px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    color: #94a3b8;
+
+    border-top: 2px solid #d4af37;
+
+    background: #111827;
+
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width:900px) {
+
+    nav {
+
+        flex-direction: column;
+
+        gap: 18px;
+
+    }
+
+    .nav-links {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+    .hero {
+
+        padding: 70px 20px;
+
+    }
+
+    .hero h1 {
+
+        font-size: 38px;
+
+    }
+
+    .hero p {
+
+        font-size: 16px;
+
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .dropdown-content {
+
+        position: static;
+
+        display: none;
+
+        width: 100%;
+
+        padding-top: 6px;
+
+    }
+
+    .dropdown-menu {
+
+        margin-top: 4px;
+
+    }
 
 }
