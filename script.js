@@ -1,36 +1,35 @@
 // ==========================
-// VEN Alliance Hub v2
+// VEN Alliance Hub v3
 // ==========================
 
 console.log("VEN Alliance Hub Loaded");
 
-// Smooth scroll for internal links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-        e.preventDefault();
+// --------------------------
+// Smooth Scroll
+// --------------------------
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+    link.addEventListener("click", function (e) {
 
         const target = document.querySelector(this.getAttribute("href"));
 
-        if (target) {
-            target.scrollIntoView({
-                behavior: "smooth"
-            });
-        }
-    });
-});
+        if (!target) return;
 
-// Future-ready card click animation
-document.querySelectorAll(".card").forEach(card => {
+        e.preventDefault();
 
-    card.addEventListener("mouseenter", () => {
-
-        card.style.transition = "0.3s";
+        target.scrollIntoView({
+            behavior: "smooth"
+        });
 
     });
 
 });
 
-// Future-ready dropdown support for mobile
+// --------------------------
+// Mobile Dropdown
+// --------------------------
+
 if (window.innerWidth <= 768) {
 
     document.querySelectorAll(".dropdown > a").forEach(link => {
@@ -41,19 +40,20 @@ if (window.innerWidth <= 768) {
 
             const menu = this.nextElementSibling;
 
-            if (menu.style.display === "block") {
+            document.querySelectorAll(".dropdown-content").forEach(drop => {
 
-                menu.style.display = "none";
+                if (drop !== menu) {
 
-            } else {
+                    drop.style.display = "none";
 
-                document.querySelectorAll(".dropdown-content").forEach(item => {
-                    item.style.display = "none";
-                });
+                }
 
-                menu.style.display = "block";
+            });
 
-            }
+            menu.style.display =
+                menu.style.display === "block"
+                    ? "none"
+                    : "block";
 
         });
 
@@ -61,5 +61,44 @@ if (window.innerWidth <= 768) {
 
 }
 
-// Welcome message
+// --------------------------
+// Card Hover Animation
+// --------------------------
+
+document.querySelectorAll(".card").forEach(card => {
+
+    card.addEventListener("mouseenter", () => {
+
+        card.style.transform = "translateY(-8px)";
+
+    });
+
+    card.addEventListener("mouseleave", () => {
+
+        card.style.transform = "translateY(0)";
+
+    });
+
+});
+
+// --------------------------
+// Sticky Header Shadow
+// --------------------------
+
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 20) {
+
+        header.style.boxShadow = "0 8px 25px rgba(0,0,0,.35)";
+
+    } else {
+
+        header.style.boxShadow = "0 6px 18px rgba(0,0,0,.25)";
+
+    }
+
+});
+
 console.log("Welcome Commander!");
