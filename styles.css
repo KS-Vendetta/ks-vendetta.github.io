@@ -433,3 +433,8 @@ footer {
 .content-page {
     padding-bottom: 60px;
 }
+.card{
+    display:block;
+    text-decoration:none;
+    color:inherit;
+}
