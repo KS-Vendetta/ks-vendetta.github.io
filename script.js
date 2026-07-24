@@ -5,6 +5,55 @@
 console.log("VEN Alliance Hub Loaded");
 
 // --------------------------
+// Load Shared Navbar
+// --------------------------
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const navbar = document.getElementById("navbar-container");
+
+    if (navbar) {
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+
+                navbar.innerHTML = data;
+
+                // Mobile Dropdown
+                if (window.innerWidth <= 768) {
+
+                    document.querySelectorAll(".dropdown > a").forEach(link => {
+
+                        link.addEventListener("click", function (e) {
+
+                            e.preventDefault();
+
+                            const menu = this.nextElementSibling;
+
+                            document.querySelectorAll(".dropdown-content").forEach(drop => {
+
+                                if (drop !== menu) {
+                                    drop.style.display = "none";
+                                }
+
+                            });
+
+                            menu.style.display =
+                                menu.style.display === "block"
+                                    ? "none"
+                                    : "block";
+
+                        });
+
+                    });
+
+                }
+
+            });
+
+});
+
+// --------------------------
 // Smooth Scroll
 // --------------------------
 
@@ -25,41 +74,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
 
 });
-
-// --------------------------
-// Mobile Dropdown
-// --------------------------
-
-if (window.innerWidth <= 768) {
-
-    document.querySelectorAll(".dropdown > a").forEach(link => {
-
-        link.addEventListener("click", function (e) {
-
-            e.preventDefault();
-
-            const menu = this.nextElementSibling;
-
-            document.querySelectorAll(".dropdown-content").forEach(drop => {
-
-                if (drop !== menu) {
-
-                    drop.style.display = "none";
-
-                }
-
-            });
-
-            menu.style.display =
-                menu.style.display === "block"
-                    ? "none"
-                    : "block";
-
-        });
-
-    });
-
-}
 
 // --------------------------
 // Card Hover Animation
